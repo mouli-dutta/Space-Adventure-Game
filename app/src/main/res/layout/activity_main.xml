@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/space_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee_shade"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/text_color"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/start_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_game_menu"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/play_pause_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/play_music"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/how_to_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_play"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

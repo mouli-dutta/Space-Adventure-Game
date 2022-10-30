@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Space\nAdventure</string>
+
+    <string name="background_image">Background Image</string>
+
+    <string name="start_game_menu">☕ Start Game ☕</string>
+    <string name="play_music">▶️ Play Music ▶️</string>
+    <string name="pause_music">⏸️  Pause Music  ⏸️</string>
+    <string name="how_to_play">💭 How to Play 💭</string>
+
+    <string name="reset">reset</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+
+    <string name="up_arrow">⬆️</string>
+    <string name="down_arrow">⬇️</string>
+    <string name="left_arrow">⬅️</string>
+    <string name="right_arrow">➡️</string>
+
+    <string name="earth">🌏</string>
+    <string name="alien">👽</string>
+    <string name="player">👨‍🚀</string>
+
+    <string name="move">Move</string>
+    <string name="choose_direction">Select direction from above</string>
+
+</resources>

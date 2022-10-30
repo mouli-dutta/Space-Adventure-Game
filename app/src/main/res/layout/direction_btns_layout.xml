@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/up_arrow_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_background"
+        android:text="@string/up_arrow"
+        android:textColor="@color/status_bar_color"
+        android:textSize="@dimen/direction_btn_text_size" />
+
+    <Button
+        android:id="@+id/down_arrow_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_background"
+        android:text="@string/down_arrow"
+        android:textColor="@color/status_bar_color"
+        android:textSize="@dimen/direction_btn_text_size" />
+
+    <Button
+        android:id="@+id/left_arrow_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_background"
+        android:text="@string/left_arrow"
+        android:textColor="@color/status_bar_color"
+        android:textSize="@dimen/direction_btn_text_size" />
+
+    <Button
+        android:id="@+id/right_arrow_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_background"
+        android:text="@string/right_arrow"
+        android:textColor="@color/status_bar_color"
+        android:textSize="@dimen/direction_btn_text_size" />
+
+</LinearLayout>

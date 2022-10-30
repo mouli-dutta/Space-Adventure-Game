@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="@dimen/grid_space"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/cell1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/grid_space"
+        android:background="@drawable/text_view_cell_background"/>
+
+    <TextView
+        android:id="@+id/cell2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/grid_space"
+        android:background="@drawable/text_view_cell_background"/>
+
+    <TextView
+        android:id="@+id/cell3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/grid_space"
+        android:layout_weight="1"
+        android:background="@drawable/text_view_cell_background"/>
+
+    <TextView
+        android:id="@+id/cell4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/grid_space"
+        android:background="@drawable/text_view_cell_background"/>
+
+    <TextView
+        android:id="@+id/cell5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/text_view_cell_background"/>
+
+</LinearLayout>
