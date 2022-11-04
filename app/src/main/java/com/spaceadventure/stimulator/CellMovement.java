@@ -19,7 +19,7 @@ import org.jetbrains.annotations.NotNull;
  * - moveLeft and
  * - moveRight
  * <p>
- * and Helper, private methods are
+ * and Helper/ private methods are
  * - setMiddleCell
  * - updateCell
  */
