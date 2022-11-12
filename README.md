@@ -1,7 +1,10 @@
 # Space-Adventure-Game
-#### It's a version of the popular Lunar Landing Game</br>https://youtu.be/QG8yRKZD7iE</br>
+### It's a version of the popular Lunar Landing Game</br>https://youtu.be/QG8yRKZD7iE</br>
 
 ## Welcome to Space Adventure 🤗</br>
+
+<img src="https://user-images.githubusercontent.com/117016206/201458831-976fb755-4d42-4162-8c9b-e53485c35b94.jpg" width ="250"/>
+                                                                                                                          
 Your objective in this game is to move the orange tile with the Astronaut emoji to the middle tile where the Earth emoji is.</br>
 You can only move in Up, Down, Left and Right directions.</br>
 First select:</br>
