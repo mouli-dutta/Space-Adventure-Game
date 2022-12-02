@@ -11,6 +11,7 @@ import com.spaceadventure.core.SpaceCell;
 import com.spaceadventure.render.GameBoard;
 import com.spaceadventure.render.Maze;
 import com.spaceadventure.stimulator.UserGamePlay;
+import com.spaceadventure.util.StatusBar;
 
 /**
  * {@code GameViewActivity} is the Main program Activity.
@@ -26,20 +27,22 @@ import com.spaceadventure.stimulator.UserGamePlay;
  */
 
 public class GameViewActivity extends AppCompatActivity {
-    // challenge number counter
-    private int cnt = 0;
+    // challenge number
+    private int level = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_view);
 
+        new StatusBar(this).changeColor(R.color.status_bar_color);
+
         // initialise game for the first time
         initGame();
 
         // display challenge number
         TextView chNum = findViewById(R.id.ch_num);
-        String s = "Challenge Number #" + (cnt + 1);
+        String s = "Challenge Number #" + (level + 1);
         chNum.setText(s);
 
         // display move
@@ -52,11 +55,11 @@ public class GameViewActivity extends AppCompatActivity {
         Button next = findViewById(R.id.next_game);
         next.setOnClickListener(v -> {
 
-            if (cnt >= mazeLen) cnt = -1;
-            cnt++;
+            if (level >= mazeLen) level = -1;
+            level++;
 
-            if (cnt >= 0) {
-                String s1 = "Challenge Number #" + (cnt + 1);
+            if (level >= 0) {
+                String s1 = "Challenge Number #" + (level + 1);
                 chNum.setText(s1);
                 initGame();
             }
@@ -67,11 +70,11 @@ public class GameViewActivity extends AppCompatActivity {
         Button prev = findViewById(R.id.previous_game);
         prev.setOnClickListener(v -> {
 
-            if (cnt <= 0) cnt = mazeLen + 1;
-            cnt--;
+            if (level <= 0) level = mazeLen + 1;
+            level--;
 
-            if (cnt <= mazeLen) {
-                String s1 = "Challenge Number #" + (cnt + 1);
+            if (level <= mazeLen) {
+                String s1 = "Challenge Number #" + (level + 1);
                 chNum.setText(s1);
                 initGame();
             }
@@ -87,7 +90,7 @@ public class GameViewActivity extends AppCompatActivity {
     }
 
     private void initGame() {
-        GameBoard gameBoard = new GameBoard(this, this, cnt);
+        GameBoard gameBoard = new GameBoard(this, this, level);
         SpaceCell[][] board = gameBoard.getBoardCell();
         new UserGamePlay(this, board).solve();
     }

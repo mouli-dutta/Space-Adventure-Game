@@ -1,83 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@drawable/stary_sky"
-    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="100"
     tools:context=".main.GameViewActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:overScrollMode="never"
-        android:scrollbars="none">
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_weight="5"
+        android:baselineAligned="false"
+        android:weightSum="2">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/move_counter"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/move"
+            android:textColor="@color/text_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ch_num"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_margin="30dp"
+        android:layout_weight="90"
+        android:baselineAligned="false"
+        android:weightSum="5">
+
+        <include
+            android:id="@+id/row_1"
+            layout="@layout/single_row_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_space"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/row_2"
+            layout="@layout/single_row_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_space"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/row_3"
+            layout="@layout/single_row_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_space"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/row_4"
+            layout="@layout/single_row_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_space"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/row_5"
+            layout="@layout/single_row_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_space"
+            android:layout_weight="1" />
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="5"
+        android:baselineAligned="false"
+        android:weightSum="3">
+
+        <include layout="@layout/direction_btns_layout" />
+
+        <TextView
+            android:id="@+id/curr_dir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:padding="10dp"
+            android:text="@string/choose_direction"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/move_counter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:padding="5dp"
-                android:textColor="@color/text_color"
-                android:textSize="24sp"
-                android:text="@string/move"/>
+        <include layout="@layout/game_menu_layout" />
 
-            <TextView
-                android:id="@+id/ch_num"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:fontFamily="serif"
-                android:padding="5dp"
-                android:textColor="@color/text_color"
-                android:textSize="20sp" />
+    </TableLayout>
 
-            <include
-                android:id="@+id/row_1"
-                layout="@layout/single_row_layout" />
-
-            <include
-                android:id="@+id/row_2"
-                layout="@layout/single_row_layout" />
-
-            <include
-                android:id="@+id/row_3"
-                layout="@layout/single_row_layout" />
-
-            <include
-                android:id="@+id/row_4"
-                layout="@layout/single_row_layout" />
-
-            <include
-                android:id="@+id/row_5"
-                layout="@layout/single_row_layout" />
-
-            <include layout="@layout/direction_btns_layout" />
-
-            <TextView
-                android:id="@+id/curr_dir"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:padding="6dp"
-                android:text="@string/choose_direction"
-                android:textColor="@color/text_color"
-                android:textSize="18sp" />
-
-            <include layout="@layout/game_menu_layout" />
-
-        </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+</TableLayout>
