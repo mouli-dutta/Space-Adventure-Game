@@ -27,7 +27,7 @@ public class UserGamePlay {
     private final CellPos winningCell = new CellPos(2, 2);
     private Direction direction = Direction.NONE;
 
-    private CellValueExtractor cX;
+    private final CellValueExtractor cX;
 
     private int movesCounter = 0;
 

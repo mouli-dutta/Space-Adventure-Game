@@ -9,8 +9,11 @@ import android.widget.Button;
 import com.spaceadventure.R;
 import com.spaceadventure.core.DialogManager;
 import com.spaceadventure.core.SoundManager;
+import com.spaceadventure.util.StatusBar;
 
 import org.jetbrains.annotations.NotNull;
+
+import java.util.Objects;
 
 /**
  * MainPage of the Game has three buttons
@@ -26,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        new StatusBar(this).changeColor(R.color.status_bar_color);
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         soundManager = new SoundManager(this);
 
@@ -77,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         "moving straight into another Astronaut or Alien tile.\n" +
                         "You can not move into the walls of the board " +
                         "otherwise your tile will be lost in the space forever...\n\n" +
-                        "Have Fun!\n        ~ Mouli Dutta"
+                        "May no one gets lost. Have Fun!\n        ~ Mouli Dutta"
                 ,
                 "close"));
     }

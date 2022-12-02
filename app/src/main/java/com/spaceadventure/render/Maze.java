@@ -95,19 +95,17 @@ public class Maze {
                 //17
                 {{g, c, g, g, g}, {g, g, g, g, p}, {g, g, g, g, g}, {g, g, g, g, g}, {y, o, b, g, g}},
                 //18
-                {{r, y, g, g, g}, {g, g, g, g, c}, {g, g, g, g, g}, {p, g, g, g, g}, {g, g, g, b, o}},
-                //19
                 {{g, g, r, g, y}, {g, g, g, g, g}, {b, g, g, g, g}, {g, g, g, p, g}, {c, g, g, g, o}},
+                //19
+                {{y, g, o, g, c}, {g, g, p, g, g}, {g, g, g, g, g}, {g, g, g, g, g}, {b, g, g, g, r}},
 
                 //20
-                {{y, g, o, g, c}, {g, g, p, g, g}, {g, g, g, g, g}, {g, g, g, g, g}, {b, g, g, g, r}},
-                //21
                 {{g, g, o, g, g}, {p, g, g, g, c}, {g, g, g, g, g}, {b, g, g, g, r}, {g, g, y, g, g}},
-                //22
+                //21
                 {{y, g, g, o, b}, {g, g, g, g, g}, {g, g, g, g, g}, {p, g, g, c, g}, {g, g, g, g, g}},
-                //23
+                //22
                 {{g, g, c, g, o}, {g, g, g, g, g}, {y, b, g, g, g}, {g, g, g, g, g}, {g, r, g, g, p}},
-                //24
+                //23
                 {{b, g, o, g, p}, {g, g, g, g, g}, {c, g, g, g, g}, {g, g, g, g, g}, {r, g, g, g, y}},
         };
 

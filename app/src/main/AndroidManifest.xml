@@ -9,14 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SpaceAdventure">
-        <activity android:name=".main.GameViewActivity"></activity>
-        <activity android:name=".main.MainActivity">
+
+        <activity android:name=".main.GameViewActivity" android:screenOrientation="portrait" android:exported="true"/>
+        <activity android:name=".main.MainActivity" android:screenOrientation="portrait" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
