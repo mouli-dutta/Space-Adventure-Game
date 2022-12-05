@@ -1,7 +1,7 @@
-# Space-Adventure-Game
+# Space Adventure Game
 ### It's a version of the popular [Lunar Landing Game](https://youtu.be/QG8yRKZD7iE)</br>
 
-## Welcome to Space Adventure 🤗</br>
+## Welcome to Space Adventure 🤗 </br>
 
 [🔥Click Here🔥](https://drive.google.com/file/d/1E3DPir4FNNQ7dk8Hz6bg1C7ZRTB2LEbf/view?usp=drivesdk) to download the game on Android 5.1 and up.
 
@@ -19,4 +19,4 @@ But the Astronaut and the Alien tiles can only move by moving straight into anot
 You can not move into the walls of the board otherwise your tile will be lost in the space forever...</br></br>
 May no one gets lost in the space!</br></br>
 Have Fun!</br>
-~ Mouli Dutta
+ ~ Mouli Dutta
