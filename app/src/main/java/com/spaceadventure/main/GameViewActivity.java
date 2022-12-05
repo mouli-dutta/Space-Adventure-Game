@@ -11,7 +11,6 @@ import com.spaceadventure.core.SpaceCell;
 import com.spaceadventure.render.GameBoard;
 import com.spaceadventure.render.Maze;
 import com.spaceadventure.stimulator.UserGamePlay;
-import com.spaceadventure.util.StatusBar;
 
 /**
  * {@code GameViewActivity} is the Main program Activity.
@@ -34,8 +33,6 @@ public class GameViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_view);
-
-        new StatusBar(this).changeColor(R.color.status_bar_color);
 
         // initialise game for the first time
         initGame();

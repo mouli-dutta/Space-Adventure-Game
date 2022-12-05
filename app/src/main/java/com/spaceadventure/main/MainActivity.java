@@ -1,19 +1,16 @@
 package com.spaceadventure.main;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.spaceadventure.R;
 import com.spaceadventure.core.DialogManager;
 import com.spaceadventure.core.SoundManager;
-import com.spaceadventure.util.StatusBar;
 
 import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
 
 /**
  * MainPage of the Game has three buttons
@@ -29,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        new StatusBar(this).changeColor(R.color.status_bar_color);
-        Objects.requireNonNull(getSupportActionBar()).hide();
 
         soundManager = new SoundManager(this);
 
