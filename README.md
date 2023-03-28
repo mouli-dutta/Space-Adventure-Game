@@ -1,10 +1,9 @@
 # Space Adventure Game
 ### It's a version of the popular [Lunar Landing Game](https://youtu.be/QG8yRKZD7iE)</br>
 
+## [🔥Click Here🔥](https://drive.google.com/file/d/1mCVmFwByF547pWFJxzoqBUATetQ6rtjg/view?usp=drivesdk) to download the game on Android 5.1 and up.
+  
 ## Welcome to Space Adventure 🤗 </br>
-
-[🔥Click Here🔥](https://drive.google.com/file/d/1mCVmFwByF547pWFJxzoqBUATetQ6rtjg/view?usp=drivesdk) to download the game on Android 5.1 and up.
-                                                                                                                          
 Your objective in this game is to move the orange tile with the Astronaut emoji to the middle tile where the Earth emoji is.</br>
 You can only move in Up, Down, Left and Right directions.</br>
 First select:</br>
