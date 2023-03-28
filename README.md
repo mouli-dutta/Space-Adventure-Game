@@ -4,8 +4,6 @@
 ## Welcome to Space Adventure 🤗 </br>
 
 [🔥Click Here🔥](https://drive.google.com/file/d/1mCVmFwByF547pWFJxzoqBUATetQ6rtjg/view?usp=drivesdk) to download the game on Android 5.1 and up.
-
-<img src="https://user-images.githubusercontent.com/117016206/201458831-976fb755-4d42-4162-8c9b-e53485c35b94.jpg" width ="250"/>
                                                                                                                           
 Your objective in this game is to move the orange tile with the Astronaut emoji to the middle tile where the Earth emoji is.</br>
 You can only move in Up, Down, Left and Right directions.</br>
@@ -20,3 +18,7 @@ You can not move into the walls of the board otherwise your tile will be lost in
 May no one gets lost in the space!</br></br>
 Have Fun!</br>
  ~ Mouli Dutta
+
+
+https://user-images.githubusercontent.com/117016206/228133864-b7145c34-c1cd-4aea-9d7b-232c50d6f464.mp4
+
