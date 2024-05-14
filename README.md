@@ -1,6 +1,4 @@
 # Space Adventure Game
-### It's a version of the popular [Lunar Landing Game](https://youtu.be/QG8yRKZD7iE)</br>
-
 ## [🔥Click Here🔥](https://drive.google.com/file/d/1mCVmFwByF547pWFJxzoqBUATetQ6rtjg/view?usp=drivesdk) to download the game on Android 5.1 and up.
   
 ## Welcome to Space Adventure 🤗 </br>
